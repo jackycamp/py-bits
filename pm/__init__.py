@@ -21,9 +21,8 @@ class Path:
     
 
 class PathManager:
-    def __init__(self, root: Union[str, List[str]] = [], use_posix=False):
+    def __init__(self, root: Union[str, List[str]] = []):
         self._root = []
-        self.use_posix = use_posix
 
         if isinstance(root, List):
             self._root.extend(root)
